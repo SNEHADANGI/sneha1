@@ -1,0 +1,11 @@
+<h1>show#page</h1>
+<lable>name:</lable> <%= @users.username %><br/>
+<lable>email:</lable> <%= @users.email %><br/>
+<lable>first name:</lable> <%= @users.f_name %><br/>
+<lable>last name:</lable> <%= @users.l_name %><br/>
+<lable>full name:</lable> <%= @users.full_name %><br/>
+<lable>user type:</lable> <%= @users.user_type %><br/>
+<lable>contact number:</lable> <%= @users.contact_no %><br/>
+<lable>username:</lable> <%= @users.username %>
+<br>
+<%= link_to "index",users_path %>

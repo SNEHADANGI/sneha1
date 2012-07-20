@@ -1,0 +1,18 @@
+<h1>users#index</h1>
+<ul>
+<% @users.each do |u| %>
+<li><lable>username:<lable><%= u.username %><br> 
+<lable>email: <lable><%= u.email %> <br/>
+<lable>f name: <lable><%= u.f_name %><br>
+<lable>l name: </lable><%= u.l_name %><br>
+<lable>full name: <lable><%= u.full_name %><br>
+<lable>contact no: <lable><%= u.contact_no %><br>
+<lable>usertype: <lable><%= u.user_type %><br>
+<%= link_to "Show", user_path(u) %>
+ <%= link_to "Delete", user_path(u),:method=>:delete %>
+ <%= link_to "Edit", edit_user_path(u) %>
+</li>
+<% end %>
+</ul>
+<%= link_to "Create User",new_user_path %>
+
